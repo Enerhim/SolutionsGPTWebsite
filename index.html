@@ -16,7 +16,7 @@
       line-height: 1.6;
       background-color: #f9f9f9;
       color: #333;
-      padding-bottom: 60px;
+      padding-bottom: 70px;
     }
     header {
       background-color: #003366;
@@ -84,6 +84,21 @@
       font-weight: bold;
       color: #003366;
     }
+    .diagram {
+      margin: 15px 0;
+      text-align: center;
+    }
+    .diagram img {
+      max-width: 100%;
+      height: auto;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+    .diagram p {
+      margin-top: 8px;
+      font-style: italic;
+      color: #0055a5;
+    }
     footer {
       background-color: #003366;
       color: #fff;
@@ -109,202 +124,163 @@
 <body>
   <header>
     <h1>NCERT Solutions Chapter</h1>
-    <p>Class XII Chemistry – Comprehensive Overview of Solutions</p>
+    <p>Class XII Chemistry – Comprehensive Guide from Dissolution to Azeotropes</p>
   </header>
   
   <nav>
     <a href="#intro">Introduction</a>
-    <a href="#definitions">Definitions & Terms</a>
-    <a href="#concentration">Concentration</a>
-    <a href="#solubility">Solubility</a>
-    <a href="#laws">Key Laws</a>
+    <a href="#definitions">Key Definitions</a>
+    <a href="#concentration">Concentration & Dissolution</a>
+    <a href="#laws">Laws & Equilibria</a>
     <a href="#colligative">Colligative Properties</a>
-    <a href="#abnormal">Abnormal Molar Mass</a>
-    <a href="#osmosis">Osmosis</a>
+    <a href="#vanthoff">van’t Hoff Factor</a>
+    <a href="#diagrams">Diagrams</a>
     <a href="#summary">Summary</a>
   </nav>
   
   <div class="container">
-    
     <!-- Introduction -->
     <section id="intro">
       <h2>1. Introduction</h2>
       <p>
-        A solution is a homogeneous mixture where the composition and properties are uniform throughout. In everyday life and in nature, most substances exist as mixtures rather than pure compounds. This chapter lays the foundation for understanding the behavior, concentration, and properties of solutions—key topics in modern chemistry.
+        In real-life, pure substances are rare; almost all materials are mixtures, with solutions being one of the most important. This chapter covers the formation and properties of solutions—from dissolution and dynamic equilibrium to vapor pressure lowering, boiling point elevation, freezing point depression, and azeotropes.
       </p>
     </section>
     
-    <!-- Definitions & Terms -->
+    <!-- Key Definitions -->
     <section id="definitions">
-      <h2>2. Definitions & Terms</h2>
-      <h3>Solution</h3>
-      <p>
-        A solution is a homogeneous mixture of two or more substances. It consists of a solute, which is dissolved in a solvent.
-      </p>
-      <h3>Solvent and Solute</h3>
-      <p>
-        <strong>Solvent:</strong> The component present in the greatest amount that determines the state (solid, liquid, or gas).<br>
-        <strong>Solute:</strong> The substance dissolved in the solvent.
-      </p>
-      <h3>Saturated, Unsaturated, and Supersaturated Solutions</h3>
-      <p>
-        A <em>saturated solution</em> is one in which no more solute can dissolve at a given temperature and pressure. An <em>unsaturated solution</em> can dissolve additional solute, while a <em>supersaturated solution</em> temporarily contains more solute than it can normally dissolve.
-      </p>
+      <h2>2. Key Definitions & Terms</h2>
+      <ul>
+        <li><strong>Solution:</strong> A homogeneous mixture in which the solute is uniformly distributed within the solvent.</li>
+        <li><strong>Solvent:</strong> The component present in the greatest amount that determines the physical state.</li>
+        <li><strong>Solute:</strong> The substance dissolved in the solvent.</li>
+        <li><strong>Dissolution:</strong> The process by which a solute dissolves in a solvent to form a homogeneous mixture.</li>
+        <li><strong>Crystallization:</strong> The formation of solid crystals from a solution.</li>
+        <li><strong>Dynamic Equilibrium:</strong> A state where the rates of dissolution and crystallization are equal in a saturated solution.</li>
+        <li><strong>Saturated Solution:</strong> A solution that cannot dissolve any more solute at a given temperature and pressure.</li>
+        <li><strong>Unsaturated Solution:</strong> A solution that can dissolve additional solute.</li>
+        <li><strong>Supersaturated Solution:</strong> A metastable solution containing more solute than its equilibrium solubility.</li>
+        <li><strong>Ideal Solution:</strong> A solution that obeys Raoult's law perfectly.</li>
+        <li><strong>Non-Ideal Solution:</strong> A solution that deviates from Raoult’s law due to differing intermolecular forces.</li>
+        <li><strong>Positive Deviation:</strong> When vapor pressure is higher than expected, typically due to weaker solute-solvent interactions.</li>
+        <li><strong>Negative Deviation:</strong> When vapor pressure is lower than expected because of stronger solute-solvent interactions.</li>
+        <li><strong>Azeotrope:</strong> A mixture that boils at a constant temperature because the vapor has the same composition as the liquid.</li>
+        <li><strong>Colligative Properties:</strong> Properties that depend on the number of solute particles rather than their identity.</li>
+        <li><strong>Ebullioscopic Constant (K₍b₎):</strong> Constant relating boiling point elevation to molality.</li>
+        <li><strong>Cryoscopic Constant (K₍f₎):</strong> Constant relating freezing point depression to molality.</li>
+        <li><strong>Osmosis:</strong> The movement of solvent through a semipermeable membrane from lower to higher solute concentration.</li>
+        <li><strong>Reverse Osmosis:</strong> The process where pressure greater than the osmotic pressure forces solvent in the reverse direction.</li>
+      </ul>
     </section>
     
-    <!-- Concentration of Solutions -->
+    <!-- Concentration & Dissolution -->
     <section id="concentration">
-      <h2>3. Concentration of Solutions</h2>
+      <h2>3. Concentration, Dissolution & Dynamic Equilibrium</h2>
       <p>
-        Concentration is a measure of the amount of solute present in a given quantity of solution. There are several methods to express concentration:
-      </p>
-      <ul>
-        <li><strong>Mass Percentage (w/w):</strong> (Mass of solute / Total mass of solution) × 100%</li>
-        <li><strong>Volume Percentage (v/v):</strong> (Volume of solute / Total volume of solution) × 100%</li>
-        <li><strong>Mass by Volume Percentage (w/v):</strong> Mass of solute in 100 mL of solution</li>
-        <li><strong>Parts Per Million (ppm):</strong> (Mass of solute / Total mass of solution) × 10<sup>6</sup></li>
-        <li><strong>Mole Fraction (x):</strong> Ratio of moles of a component to the total moles in the solution</li>
-        <li><strong>Molarity (M):</strong> Moles of solute per liter of solution</li>
-        <li><strong>Molality (m):</strong> Moles of solute per kilogram of solvent</li>
-      </ul>
-      <p>
-        Note that <em>molarity</em> is temperature-dependent since volume changes with temperature, whereas <em>molality</em> is based on mass and remains constant.
+        Concentration quantifies the amount of solute in a solution. Methods include mass percentage, volume percentage, mass by volume percentage, parts per million, mole fraction, molarity, and molality.
       </p>
       <div class="formula-box">Mass % = (mass of solute / total mass of solution) × 100</div>
       <div class="formula-box">Molarity (M) = moles of solute / volume of solution (L)</div>
       <div class="formula-box">Molality (m) = moles of solute / mass of solvent (kg)</div>
-    </section>
-    
-    <!-- Solubility -->
-    <section id="solubility">
-      <h2>4. Solubility</h2>
       <p>
-        Solubility is defined as the maximum amount of solute that can dissolve in a specified amount of solvent at a given temperature and pressure. It depends on:
-      </p>
-      <ul>
-        <li><strong>Nature of Solute and Solvent:</strong> “Like dissolves like” – polar solutes in polar solvents and nonpolar solutes in nonpolar solvents.</li>
-        <li><strong>Temperature:</strong> For solids, solubility usually increases with temperature, whereas for gases, solubility decreases as temperature rises.</li>
-        <li><strong>Pressure:</strong> Mainly affects the solubility of gases; increased pressure generally increases gas solubility.</li>
-      </ul>
-      <p>
-        In a saturated solution, the process of dissolution and crystallization occurs simultaneously, establishing a dynamic equilibrium.
+        <strong>Dissolution</strong> is the process by which solute particles interact with solvent molecules to form a homogeneous mixture. In a saturated solution, dynamic equilibrium is reached when dissolution and crystallization occur at the same rate.
       </p>
     </section>
     
-    <!-- Key Laws -->
+    <!-- Laws & Equilibria -->
     <section id="laws">
-      <h2>5. Key Laws Governing Solutions</h2>
-      
+      <h2>4. Key Laws and Equilibrium Concepts</h2>
       <h3>Henry's Law</h3>
       <p>
-        Henry’s Law describes the solubility of a gas in a liquid. It states that at a constant temperature, the concentration of a gas in a liquid is directly proportional to the partial pressure of the gas above the solution.
+        Henry’s Law applies to gases dissolved in liquids and states that at constant temperature, the concentration of a dissolved gas is directly proportional to its partial pressure.
       </p>
       <div class="formula-box">C = k<sub>H</sub> × P</div>
       <p>
-        Where C is the concentration of the gas, k<sub>H</sub> is Henry’s law constant (which varies with the nature of the gas and solvent), and P is the partial pressure of the gas.
+        This law explains why gas solubility increases under high pressure and decreases with higher temperature.
       </p>
       
-      <h3>Raoult's Law</h3>
+      <h3>Raoult's Law and Vapor Pressure Lowering</h3>
       <p>
-        Raoult’s Law applies to ideal solutions and relates the vapor pressure of a solution to the mole fraction of the solvent. For a volatile solvent:
+        Raoult’s Law states that in an ideal solution, the vapor pressure of each volatile component is directly proportional to its mole fraction:
       </p>
       <div class="formula-box">P<sub>solvent</sub> = x<sub>solvent</sub> × P°<sub>solvent</sub></div>
       <p>
-        In binary solutions (two volatile components), the total vapor pressure is the sum of the partial pressures:
-      </p>
-      <div class="formula-box">P<sub>total</sub> = x<sub>1</sub>P°<sub>1</sub> + x<sub>2</sub>P°<sub>2</sub></div>
-      <p>
-        Raoult’s law is a special case of Henry’s law when the proportionality constant for the solvent becomes its pure vapor pressure.
+        For a binary solution, the total vapor pressure is the sum of the partial pressures.
       </p>
       
-      <h3>Dalton's Law of Partial Pressures</h3>
+      <h3>Azeotropes</h3>
       <p>
-        Dalton’s Law states that the total pressure of a gas mixture is equal to the sum of the partial pressures of each individual gas:
-      </p>
-      <div class="formula-box">P<sub>total</sub> = P<sub>1</sub> + P<sub>2</sub> + ...</div>
-      <p>
-        In the context of solutions, it explains how the vapor phase above a solution is composed of contributions from each volatile component.
+        An azeotrope is a mixture of liquids that boils at a constant temperature because the vapor has the same composition as the liquid. Depending on the interactions, azeotropes may have a minimum or maximum boiling point.
       </p>
     </section>
     
     <!-- Colligative Properties -->
     <section id="colligative">
-      <h2>6. Colligative Properties</h2>
+      <h2>5. Colligative Properties</h2>
       <p>
-        Colligative properties depend solely on the number of solute particles in a solution and not on their nature. These properties include:
+        Colligative properties depend only on the number of solute particles in a solution, regardless of their identity. They include:
       </p>
       <h3>Relative Lowering of Vapor Pressure</h3>
       <div class="formula-box">ΔP / P° = x<sub>solute</sub></div>
       <p>
-        The decrease in the vapor pressure of the solvent is directly proportional to the mole fraction of the solute.
+        Solute particles reduce the number of solvent molecules at the surface, thereby lowering vapor pressure.
       </p>
       <h3>Boiling Point Elevation</h3>
       <div class="formula-box">ΔT<sub>b</sub> = K<sub>b</sub> × m</div>
       <p>
-        Here, K<sub>b</sub> is the ebullioscopic constant and m is the molality. Adding a solute raises the boiling point of the solution compared to the pure solvent.
+        Adding a non-volatile solute raises the boiling point of the solution.
       </p>
       <h3>Freezing Point Depression</h3>
       <div class="formula-box">ΔT<sub>f</sub> = K<sub>f</sub> × m</div>
       <p>
-        K<sub>f</sub> is the cryoscopic constant. The presence of a solute lowers the freezing point of the solvent.
+        Likewise, the freezing point is lowered by the presence of a solute.
       </p>
       <h3>Osmotic Pressure</h3>
       <div class="formula-box">π = M R T</div>
       <p>
-        Osmotic pressure (π) is the pressure required to stop the net flow of solvent into the solution through a semipermeable membrane, where M is the molarity, R is the gas constant, and T is the temperature (in Kelvin).
-      </p>
-      <p>
-        These properties are vital in determining molar masses and understanding the behavior of solutions in biological and industrial processes.
+        Osmotic pressure is the pressure required to stop the net flow of solvent through a semipermeable membrane.
       </p>
     </section>
     
-    <!-- Abnormal Molar Mass and van't Hoff Factor -->
-    <section id="abnormal">
-      <h2>7. Abnormal Molar Mass and the van't Hoff Factor</h2>
+    <!-- van't Hoff Factor -->
+    <section id="vanthoff">
+      <h2>6. The van’t Hoff Factor (i)</h2>
       <p>
-        In many solutions, especially those containing electrolytes or associating molecules, the number of particles in solution may differ from the number originally dissolved. This leads to an "abnormal" molar mass when calculated using colligative properties.
+        The van’t Hoff factor (i) adjusts colligative property calculations for the effective number of particles in solution. It accounts for the dissociation of electrolytes or the association of solute molecules.
       </p>
       <p>
-        The van’t Hoff factor (i) is introduced to account for dissociation or association:
-      </p>
-      <div class="formula-box">i = (Observed colligative effect) / (Expected colligative effect)</div>
-      <p>
-        For example, an electrolyte that completely dissociates (like KCl) will have an i close to 2, whereas a substance that dimerizes (such as acetic acid in benzene) may have an i less than 1.
-      </p>
-    </section>
-    
-    <!-- Osmosis and Reverse Osmosis -->
-    <section id="osmosis">
-      <h2>8. Osmosis and Reverse Osmosis</h2>
-      <p>
-        Osmosis is the movement of solvent molecules through a semipermeable membrane from a region of lower solute concentration to a region of higher solute concentration. This natural process continues until equilibrium is reached.
+        <strong>For Electrolytes:</strong> For instance, NaCl ideally dissociates into Na⁺ and Cl⁻ (i ≈ 2), though incomplete dissociation can lower i.
       </p>
       <p>
-        The osmotic pressure, which is the pressure required to prevent osmosis, is given by:
+        <strong>For Non-Electrolytes:</strong> Typically, i = 1 since they do not dissociate.
       </p>
-      <div class="formula-box">π = C R T</div>
       <p>
-        When a pressure greater than the osmotic pressure is applied, the process can be reversed—this is known as <em>reverse osmosis</em>, a widely used method for water purification and desalination.
+        <strong>For Associating Solutes:</strong> Some molecules (e.g., acetic acid in benzene) dimerize, resulting in i < 1.
+      </p>
+      <div class="formula-box">Boiling Point Elevation: ΔT<sub>b</sub> = iK<sub>b</sub>m</div>
+      <div class="formula-box">Freezing Point Depression: ΔT<sub>f</sub> = iK<sub>f</sub>m</div>
+      <div class="formula-box">Osmotic Pressure: π = iMRT</div>
+      <p>
+        By comparing measured colligative properties with theoretical predictions, the extent of dissociation or association can be determined.
       </p>
     </section>
     
     <!-- Summary -->
     <section id="summary">
-      <h2>9. Summary & Conclusion</h2>
+      <h2>7. Summary & Conclusion</h2>
       <p>
-        This overview has covered the comprehensive aspects of the NCERT Solutions chapter:
+        This guide comprehensively covers the formation, concentration, and behavior of solutions:
       </p>
       <ul>
-        <li><strong>Definitions & Terms:</strong> Understanding what solutions, solvents, and solutes are, along with key terms like saturated and unsaturated solutions.</li>
-        <li><strong>Concentration Methods:</strong> Detailed methods including mass percentage, molarity, molality, and mole fraction.</li>
-        <li><strong>Solubility:</strong> Factors affecting the solubility of solids and gases in liquids and the concept of dynamic equilibrium.</li>
-        <li><strong>Key Laws:</strong> Henry's, Raoult's, and Dalton's laws, their equations, and how they interrelate in describing solution behavior.</li>
-        <li><strong>Colligative Properties:</strong> The influence of solute particles on vapor pressure, boiling point, freezing point, and osmotic pressure.</li>
-        <li><strong>Abnormal Molar Mass & van't Hoff Factor:</strong> Adjustments for dissociation or association in solutions.</li>
-        <li><strong>Osmosis:</strong> The natural process of solvent movement and its reversal in practical applications.</li>
+        <li><strong>Key Definitions & Terms:</strong> From basic concepts (solution, solvent, solute) to advanced topics (dynamic equilibrium, ideal/non-ideal solutions, azeotropes).</li>
+        <li><strong>Concentration & Dissolution:</strong> Methods to express concentration and the process of dissolution leading to equilibrium.</li>
+        <li><strong>Laws & Equilibria:</strong> Henry’s Law, Raoult’s Law, and Dalton’s Law that explain vapor pressure changes and composition effects.</li>
+        <li><strong>Colligative Properties:</strong> How the number of solute particles affects vapor pressure, boiling point, freezing point, and osmotic pressure.</li>
+        <li><strong>van’t Hoff Factor:</strong> Correction for dissociation/association effects in solutions.</li>
+        <li><strong>Diagrams:</strong> Visual aids reinforcing key concepts from dissolution through azeotropic behavior.</li>
       </ul>
       <p>
-        Mastery of these concepts forms the foundation for understanding more advanced topics in chemistry. We hope this resource serves as a clear and complete guide as you begin your study of solutions.
+        Mastery of these concepts builds a solid foundation for advanced studies in solution chemistry.
       </p>
     </section>
     
